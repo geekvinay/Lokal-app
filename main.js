@@ -3,7 +3,7 @@ import './style.css'
 // Datastructures
 let articles, heroArticle, date, i, serverResponse;
 let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-let country = 'in', category = 'entertainment';
+let country = 'in', category = 'technology';
 let headItem = `<article class="headingItem border-b-2 border-dark-50">
               <h2>
                 Trump, Cruz, make defiant stand against gun control in NRA
@@ -104,7 +104,13 @@ function fetchHeadline() {
                     </div>
                     </article>`);
         }
+    }).catch(err => {
+        let errorGiven = new Error(err);
+        console.log(errorGiven);
     })
 }
 
 fetchHeadline();
+
+
+// Adding topic functionality to the above 
