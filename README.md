@@ -11,7 +11,7 @@ I've used [VITE](https://vitejs.dev/)  because of the speed it provides.
 git clone "address of the repository"
 
 # Go/Open the repository
-cd vite
+cd repositoryName
 
 # Install all the dependencies
 npm  install
