@@ -31,7 +31,7 @@ This feature enables user to fetch news based on the topic he desires to read fr
 
 
 # Installation
-I've made this template using Vite js. It is a front-end tool that is present in npm. 
+I've made this project using Vite js. It is a front-end tool that is blazing fast. 
 > Why did I use Vite? 
 I've used [VITE](https://vitejs.dev/)  because of the speed it provides.
 
