@@ -14,7 +14,7 @@ let headItem = `<article class="headingItem border-b-2 border-dark-50">
                 <span class="author font-medium">Benneth Kennedy</span>
                 </div>
                 </article>`;
-let apiKey = '9edb774ca7e64c6d8dcd085f7870393a';
+let apiKey = '6a1d4f2afd3b4379bd04f56e72a8bb6d';
 let heroHeading = document.querySelector('#headHero');
 let heroDesc = document.querySelector("#descHero");
 let heroDate = document.querySelector("#dateHero");
