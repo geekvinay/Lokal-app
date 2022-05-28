@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    
+}
+
+
+section.body{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
+
+span.sticker{
+    @apply text-lg font-bold text-[#22577E] py-2;
+    position: relative;
+}
+
+nav.navbar{
+    background-color: white;
+    z-index: 2;
+}
+
+/* Top heading article styles */
+article.headingItem{
+    @apply px-5 py-5 mx-5 ;
+}
+
+article.headingItem h2{
+    @apply text-lg font-semibold font-serif;
+}
+article.headingItem div.dateAuth{
+    @apply text-sm py-3 font-normal opacity-50;
+}

@@ -2,22 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg" />
     <!-- Icons by FontAwesome -->
     <script
       src="https://kit.fontawesome.com/3bd604a4cf.js"
       crossorigin="anonymous"
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>The Lokall - All News compiled at a place</title>
   </head>
-  <body class="min-h-[100vh] min-w-[100vw]">
+  <body class="min-h-[100vh] w-[100vw] box-border overflow-x-hidden">
     <div id="app" class="flex flex-col">
       <nav
-        class="navbar box-border flex justify-start items-center px-16 h-[100px] w-100vw"
+        class="navbar box-border flex justify-start items-center sticky top-0 px-16 h-[100px] w-100vw border-b-2 border-gray-500"
       >
-        <img src="media/icons/IcRoundMenu.svg" alt="" class="h-7 px-5" />
-        <img src="media/icons/IcRoundSearch.svg" alt="" class="h-7 px-5" />
+        <img
+          src="media/icons/IcRoundMenu.svg"
+          alt=""
+          class="h-7 px-2 saturate-0 cursor"
+        />
+        <img
+          src="media/icons/IcRoundSearch.svg"
+          alt=""
+          class="h-7 px-2 saturate-0 cursor"
+        />
         <img
           src="media/logo.svg"
           alt=""
@@ -31,7 +39,7 @@
         >
       </nav>
       <section
-        class="topics h-[50px] w-[100vw] box-border flex justify-around items-center list-none px-[20vw] border-t-2 border-b-2 border-gray-500 text-base font-semibold text-[#22577E]"
+        class="topics h-[50px] w-[100vw] box-border flex justify-around items-center list-none px-[20vw] border-b-2 border-gray-500 text-base font-semibold text-[#22577E]"
       >
         <li>News</li>
         <li>Sports</li>
@@ -39,6 +47,67 @@
         <li>Food</li>
         <li>Travel</li>
         <li>Tech</li>
+      </section>
+      <section class="body w-[100vw] overflow-hidden box-border px-20 py-14">
+        <section
+          class="mainSection min-h-[100vh] flex flex-colpx-10 box-border"
+        >
+          <article class="heroNews">
+            <!-- <span class="sticker stickerNews"> News </span> -->
+            <h2
+              class="headingNews text-3xl font-semibold font-serif pb-6"
+              id="headHero"
+            >
+              Trump, Cruz, make defiant stand against gun control in NRA
+              speeches - The Washington Post
+            </h2>
+            <p
+              class="descriptionNews text-base font-medium opacity-75 pr-10"
+              id="descHero"
+            >
+              Former president Donald Trump, Sen. Ted Cruz and Texas Gov. Greg
+              Abbott, among other speakers, broadly rejected proposals for new
+              restrictions and called instead of more school security or mental
+              health screenings, while issuing dark warnings of Democratic pl…
+            </p>
+            <div class="dateAut text-sm py-3 font-normal opacity-50">
+              <span class="date" id="dateHero">Oct 31, 2021</span> • by
+              <span class="author font-medium" id="authorHero"
+                >Benneth Kennedy</span
+              >
+            </div>
+            <img
+              src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/NMBRRIW6B4I6ZPBVVEOQVFESHM.jpg&w=1440"
+              alt=""
+              class="imageNews w-[95%] py-6"
+              id="imageHero"
+            />
+          </article>
+        </section>
+        <section
+          class="topHeadings min-h-[100vh] flex flex-col border-l-2 border-dark-50"
+        >
+          <!-- Left section -->
+          <h2
+            class="topHeadlines text-5xl font-semibold pb-8 px-5 mx-5 border-b-2 border-dark-50"
+          >
+            Top headlines
+          </h2>
+          <!-- Container for all top headlines -->
+          <section class="headlineContainer" id="headlineContainer">
+            <!-- Each Headline item -->
+            <!-- <article class="headingItem border-b-2 border-dark-50">
+              <h2>
+                Trump, Cruz, make defiant stand against gun control in NRA
+                speeches - The Washington Post
+              </h2>
+              <div class="dateAut">
+                Oct 31, 2021 • by
+                <span class="author font-medium">Benneth Kennedy</span>
+              </div>
+            </article> -->
+          </section>
+        </section>
       </section>
     </div>
     <script type="module" src="/main.js"></script>
