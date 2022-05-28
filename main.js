@@ -104,9 +104,6 @@ function fetchHeadline() {
                     </div>
                     </article>`);
         }
-    }).catch(err => {
-        let errorGiven = new Error(err);
-        console.log(errorGiven);
     })
 }
 
