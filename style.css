@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    
-}
-
 
 section.body{
     display: grid;
@@ -36,4 +32,21 @@ article.headingItem h2{
 }
 article.headingItem div.dateAuth{
     @apply text-sm py-3 font-normal opacity-50;
+}
+
+/* Search headline Container and items */
+article.headlineSearch{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
+}
+
+article.headlineSearch img{
+    height: 250px;
+    width: fit-content;
+    object-fit: cover
+}
+
+div.details{
+    @apply px-10 py-5;
 }

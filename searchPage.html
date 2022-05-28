@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Lokall - All News compiled at a place</title>
   </head>
-  <body class="w-[100vw] box-border overflow-x-hidden">
+  <body class="min-h-[100vh] w-[100vw] box-border overflow-x-hidden">
     <div id="app" class="flex flex-col">
       <nav
         class="navbar box-border flex justify-start items-center sticky top-0 px-16 h-[100px] w-100vw border-b-2 border-gray-500"
@@ -33,7 +33,6 @@
           src="media/logo.svg"
           alt=""
           class="h-[50px] self-center justify-self-center mx-auto"
-          id="logo"
         />
         <a href="#" class="text-base font-bold text-[#22577E]">LOG IN</a>
         <a
@@ -43,16 +42,14 @@
         >
       </nav>
       <section
-        class="topics h-[50px] w-[100vw] box-border flex justify-around items-center list-none px-[20vw] border-b-2 border-gray-500 text-base font-semibold text-[#22577E] hover:cursor-pointer"
-        id="topicBar"
+        class="topics h-[50px] w-[100vw] box-border flex justify-around items-center list-none px-[20vw] border-b-2 border-gray-500 text-base font-semibold text-[#22577E]"
       >
-        <li id="business">Business</li>
-        <li id="entertainment">Entertainment</li>
-        <li id="general">General</li>
-        <li id="health">Health</li>
-        <li id="science">Science</li>
-        <li id="sports">Sports</li>
-        <li id="technology">Technology</li>
+        <li>News</li>
+        <li>Sports</li>
+        <li>Entertainment</li>
+        <li>Food</li>
+        <li>Travel</li>
+        <li>Tech</li>
       </section>
 
       <!-- #################################      Body of the Whole site ################################ -->
@@ -65,17 +62,27 @@
             <h2
               class="headingNews text-3xl font-semibold font-serif pb-6"
               id="headHero"
-            ></h2>
+            >
+              Trump, Cruz, make defiant stand against gun control in NRA
+              speeches - The Washington Post
+            </h2>
             <p
               class="descriptionNews text-base font-medium opacity-75 pr-10"
               id="descHero"
-            ></p>
+            >
+              Former president Donald Trump, Sen. Ted Cruz and Texas Gov. Greg
+              Abbott, among other speakers, broadly rejected proposals for new
+              restrictions and called instead of more school security or mental
+              health screenings, while issuing dark warnings of Democratic pl…
+            </p>
             <div class="dateAut text-sm py-3 font-normal opacity-50">
-              <span class="date" id="dateHero"></span> • by
-              <span class="author font-medium" id="authorHero"></span>
+              <span class="date" id="dateHero">Oct 31, 2021</span> • by
+              <span class="author font-medium" id="authorHero"
+                >Benneth Kennedy</span
+              >
             </div>
             <img
-              src="media/mediaFallback.svg"
+              src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/NMBRRIW6B4I6ZPBVVEOQVFESHM.jpg&w=1440"
               alt=""
               class="imageNews w-[95%] py-6"
               id="imageHero"
@@ -108,43 +115,6 @@
         </section>
       </section>
       <!-- #############################  Body of the site ends here  #################################### -->
-
-      <!-- Searching code for the whole app -->
-      <!-- <section class="search flex flex-col px-20 py-14" id="searchContainer">
-        <article class="headlineSearch border-b-2 border-b-light-blue-900">
-          <span class="sticker stickerNews"> News </span> 
-          <img
-            src="media/mediaFallback.svg"
-            alt=""
-            class="imageSearch w-[95%] py-6"
-            id="imageHero"
-          />
-          <div class="details">
-            <h2
-              class="headingNews text-3xl font-semibold font-serif pb-6"
-              id="headHero"
-            >
-              Trump, Cruz, make defiant stand against gun control in NRA
-              speeches - The Washington Post
-            </h2>
-            <p
-              class="descriptionNews text-base font-medium opacity-75 pr-10"
-              id="descHero"
-            >
-              Former president Donald Trump, Sen. Ted Cruz and Texas Gov. Greg
-              Abbott, among other speakers, broadly rejected proposals for new
-              restrictions and called instead of more school security or mental
-              health screenings, while issuing dark warnings of Democratic pl…
-            </p>
-            <div class="dateAut text-sm py-3 font-normal opacity-50">
-              <span class="date" id="dateHero">Oct 31, 2021</span> • by
-              <span class="author font-medium" id="authorHero"
-                >Benneth Kennedy</span
-              >
-            </div>
-          </div>
-        </article>
-      </section> -->
     </div>
     <script type="module" src="/main.js"></script>
   </body>
