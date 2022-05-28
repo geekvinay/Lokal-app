@@ -3,7 +3,7 @@ import './style.css'
 // Data, Variables required
 let articles, heroArticle, date, i, serverResponse;
 let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-let country = 'us', category = 'technology', query = '';
+let country = 'in', category = 'technology', query = '';
 let headItem = `<article class="headingItem border-b-2 border-dark-50">
               <h2>
                 Trump, Cruz, make defiant stand against gun control in NRA
