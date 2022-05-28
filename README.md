@@ -1,5 +1,6 @@
 # Lokal-app
 
+Link : https://lokal-news.vercel.app/
 
 # Visual Appearance 
 
