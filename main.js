@@ -56,7 +56,7 @@ fetchHeadlineItem();
 
 // Fetching the headlines for the hero Headline
 function fetchHeadline() {
-    let fetchHead = new Request(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=4dd3ac3d26b8400291f76f813bbb67f7`);
+    let fetchHead = new Request(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=9edb774ca7e64c6d8dcd085f7870393a`);
 
     // Calling the fetch API
     fetch(fetchHead).then(response => {
