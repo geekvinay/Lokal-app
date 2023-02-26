@@ -26,10 +26,10 @@ let headlineContainer = document.querySelector("#headlineContainer");
 function fetchHeadline(query) {
     let fetchHead;
     if (query) {
-        fetchHead = new Request(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${apiKey}`);
+        fetchHead = new Request(`https://gnews.io/api/v4/search??q=${query}&apiKey=${apiKey}`);
     }
     else {
-        fetchHead = new Request(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`);
+        fetchHead = new Request(`https://gnews.io/api/v4/search?country=${country}&apiKey=${apiKey}`);
     }
 
     // Calling the fetch API
@@ -91,9 +91,9 @@ let flagSearch = 1;
 function fetchHeadSearch(searchInput, topic) {
     let fetchSearch;
     if (searchInput)
-        fetchSearch = new Request(`https://newsapi.org/v2/top-headlines?q=${searchInput}&apiKey=${apiKey}`);
+        fetchSearch = new Request(`https://gnews.io/api/v4/search?q=${searchInput}&apiKey=${apiKey}`);
     else if (topic)
-        fetchSearch = new Request(`https://newsapi.org/v2/top-headlines?country=${country}&category=${topic}&apiKey=${apiKey}`);
+        fetchSearch = new Request(`https://gnews.io/api/v4/search?country=${country}&category=${topic}&apiKey=${apiKey}`);
 
     // Calling the fetch API
     fetch(fetchSearch).then(response => {
